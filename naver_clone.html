@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+html{
+    width: 100%;
+}
+#wrap{
+    min-height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#header{
+height: 168px;
+padding: 62px 0 0;
+margin: 0 157px 0 157px;
+}
+    #lang{
+    display: flex;
+    justify-content: flex-end;
+    }
+    #lang_switch{
+    width: 70px;
+    height: 20px;
+    background-attachment:white ;
+    }
+    #logo{
+        color: #03c75a;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+#container{
+    width: 100%;
+    min-height: 185px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+    #content{
+        width: 460px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    #login_form{
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+        justify-content: center;
+
+    }
+    #id{
+        background-color: white;
+        width: 100%;
+        border:solid 1px white;
+    }
+    #id_area{
+
+        height: 30px;
+        margin: 0 0 14px;
+        padding: 10px 35px 10px 15px;
+        background-color: white;
+        border: 1px solid gray;
+        display: flex;
+    }
+    #pw_area{
+
+        height: 30px;
+        margin: 0 0 14px;
+        padding: 10px 35px 10px 15px;
+        background-color: white;
+        border: 1px solid gray;
+        display: flex;
+    }
+
+    #pw{
+        background-color: white;
+        width: 100%;
+        border:solid 1px white;
+    }
+    #login{
+        width: 100%;
+        height: 61px;
+        background-color: #03c75a;
+        text-align: center;
+        margin: 30px 0 14px;
+        padding: 1px 0;
+        color: white;
+        border: 1px solid #03c75a;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #login_inf{
+        width: 100%;
+        margin: 0 0 28px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #pc_ck{
+        color: gray;
+        display: flex;
+        flex-direction: row;
+    }
+    #ip_on{
+        color: #03c75a;
+        margin: 0 7px 0 7px;
+    }
+    #dis_di{
+        margin: 0 0 0 7px;
+    }
+    #position_a{
+    border-top: 1px solid gray;
+    padding: 15px;
+    }
+    #find_inf{
+        text-align: center;
+        font-size: 15px;
+        color: gray;
+    }
+    #indinquiry{color: gray;}
+    #pwinquiry{color: gray;}
+    #join{color: gray;}
+    #phishing_ck{
+        padding: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+#footer{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#footer ul li{
+    font-size: 11px;
+    display: inline;
+    padding: 0 5px 0 7px;
+    white-space: nowrap;
+    color: gray;
+}
+#footer address a{
+    text-decoration:none;
+}
+</style>
+<body>
+<div id="wrap">
+<header>
+    <div id="header">
+        <div id="lang">
+            <select name="lang_switch" id="lang_switch">
+                <option value="ko_KR">한국어</option>
+                <option value="en_US">english</option>
+            </select>
+        </div>
+        <h1 id="logo">NAVER</h1>
+    </div>
+</header>
+
+<main>
+    <div id="container">
+    <div id="content">
+        <form action="" id="login_form">
+            <div id="id_area">
+                <input type="text" id="id">
+            </div>
+            <div id="pw_area">
+                <input type="password" id="pw">
+            </div>
+            <input type="submit" value="로그인" id="login">
+            <div id="login_inf">
+                <div id="ck_area">
+                <input type="checkbox" id="login_ck">
+                <label for="login_ck">로그인 상태 유지</label>
+            </div>
+            <div id="pc_ck">
+                <span id="ip_ck">IP보안</span>
+                <span id="ip_on">ON</span>
+                <span>|</span>
+                <div id="dis_di">일회용로그인</div>
+            </div>
+        </div>
+    </form>
+            <div id="position_a">
+                <div id="find_inf">
+                    <a href="" id="indinquiry" style="text-decoration:none">아이디 찾기</a>
+                    <a href="">|</a>
+                    <a href="" id="pwinquiry" style="text-decoration:none">비밀번호찾기</a>
+                    <a href="">|</a>
+                    <a href="" id="join" style="text-decoration:none">회원가입</a>
+                </div>
+            </div>
+            <div id="phishing_ck"">
+                <img src="pishing.JPG" alt="피싱주의이미지" width="420px">
+            </div>        
+    </div>
+    </div>
+</main>
+
+<footer>
+    <div id="footer">
+        <ul>
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>책임의 한계와 법적고지</li>
+            <li>회원정보 고객센터</li>
+        </ul>
+    <address>
+        <a style="font-size: 17px;color: #03c75a;font-weight: bolder;">NAVER</a>
+        <a style="font-size:5px; color: #666;">copyright</a>
+        <a style="font-size: 10px; color: #666;">NAVER corp.</a>
+        <a style="font-size: 5px; color: #666;">All Rights Reserved</a>
+    </address>
+    </div>
+</footer>
+</div>
+</body>
+</html>
